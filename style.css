@@ -1,0 +1,581 @@
+@font-face {
+    font-family: 'Arial-Bold MT';
+    src: url('fonts/transfonter.org-20191007-110507/Arial-BoldMT.eot');
+    src: url('fonts/transfonter.org-20191007-110507/Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+        url('fonts/transfonter.org-20191007-110507/Arial-BoldMT.woff2') format('woff2'),
+        url('fonts/transfonter.org-20191007-110507/Arial-BoldMT.woff') format('woff'),
+        url('fonts/transfonter.org-20191007-110507/Arial-BoldMT.ttf') format('truetype'),
+        url('fonts/transfonter.org-20191007-110507/Arial-BoldMT.svg#Arial-BoldMT') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arial MT';
+    src: url('fonts/transfonter.org-20191007-133340/ArialMT.eot');
+    src: url('fonts/transfonter.org-20191007-133340/ArialMT.eot?#iefix') format('embedded-opentype'),
+        url('fonts/transfonter.org-20191007-133340/ArialMT.woff2') format('woff2'),
+        url('fonts/transfonter.org-20191007-133340/ArialMT.woff') format('woff'),
+        url('fonts/transfonter.org-20191007-133340/ArialMT.ttf') format('truetype'),
+        url('fonts/transfonter.org-20191007-133340/ArialMT.svg#ArialMT') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.header {
+    background-color: #e8ebf1;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    margin-top: 40px;
+    float: right;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0px 0px;
+    padding: 27px 0px;
+    max-width: 150px;
+}
+
+.logo_img {
+    width: 100%;
+}
+
+.menu {
+    
+    font-size: 0;
+}
+
+.menu__item {
+    font-family: 'Arial MT';
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    margin-right: 26px;
+    position: relative;
+    font-weight: 400;
+}
+
+.menu__item-link {
+    display: block;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 10px;
+    border-top: 5px solid transparent;
+    position: relative;
+}
+
+.menu__item:hover .menu__item-link {
+    background-color: #fff;
+    border-top-color: #2aacc8;;
+    color: #2aacc8;
+}
+
+.menu__item-dropdown .menu__item-link{
+    padding-right: 26px; 
+}
+
+.menu__item-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotateZ(180deg);
+    transition: transform 0.3s ease-in-out;
+    transition-delay: 0.025s;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    padding: 0 5px;
+    max-height: 0vh;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+    border-bottom: 0px solid #2aacc8;
+}
+
+.menu__item:hover .submenu {
+    max-height: 100vh;
+    border-bottom: 5px solid #2aacc8;
+}
+
+.menu__item:hover .menu__item-arrow {
+    transform: translateY(-50%) rotateZ(360deg);
+}
+
+.submenu__item-link {
+    display: block;
+    padding: 12px;
+    border-bottom: 1px solid #e7e7e7;
+    white-space: nowrap;
+    color: #000000;
+}
+
+.submenu__item-link:hover {
+    color: #2aacc8;
+}
+
+.blue_bg {
+    height: 500px;
+    background-color: #81e4ed;
+}
+
+.jjj {
+    padding-top: 20px;
+}
+
+.red_bg {
+    height: 440px;
+    width: 1000px;
+    background-color: #d95634;
+}
+
+.red_text {
+    width: 294px;
+    height: 219px;
+    color: #ffffff;
+    font-family: 'Arial-Bold MT';
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 102px;
+    margin-left: 61px;
+    margin-right: 0;
+    line-height: 60px;
+    float: left;
+}
+
+.red_coffee{
+    margin-left: 61px;
+    float: right;
+}
+
+.circles_point {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 12px;
+}
+
+.circle_point {
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #72a3a8;
+}
+
+.more_block {
+    height: 300px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #e8ebf1;
+}
+
+.white_point {
+    background-color: #fff;
+}
+
+.more_cards {
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 35px;
+}
+
+.more_cards:last-child {
+    margin-right: 0;
+}
+
+.card_title {
+    color: #000000;
+    font-family: "Arial-Bold MT";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.card_icon {
+    width: 40px;
+    height: 40px;
+    background-color: #2aacc8;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 18px;
+}
+
+.cards {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.one {
+    background-image: url(img/Shape_2.png);
+}
+
+.two{
+    background-image: url(img/fullscreen.png);
+}
+
+.three {
+    background-image: url(img/view_list.png);
+}
+
+.four{
+    background-image: url(img/plane_2.png);
+} 
+
+.card_text {
+    margin-top: 18px;
+    width: 216px;
+    height: 130px;
+    color: #363636;
+    font-family: "Arial MT";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.read_more {
+    font-family: "Arial MT";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #2aacc8;
+}
+
+.letest {
+    height: 24px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfe1e5;
+}
+
+.cursor{
+    width: 14px;
+    height: 24px;
+    float: left;
+}
+
+.latest_works {
+    float: left;
+    color: #000000;
+    font-family: "Arial-Bold MT";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 9px;
+    margin-left: 25px;
+}
+
+.navigation {
+    float: right;
+}
+
+.images_cards{
+
+    margin-top: 17px;
+    padding-bottom: 37px;
+    border-bottom: 1px solid #dfe1e5;
+}
+
+.images_card_item {
+    display: inline-block;
+    margin-right: 35px;
+    position: relative;
+}
+
+.images_card_item:last-child {
+    margin-right: 0;
+}
+
+.hidden-card {
+    display: none;
+}
+
+.images_card_item:hover {
+    position: relative;
+}
+
+.images_card_item:hover .hidden-card{
+    position: absolute;
+    top: 79px;
+    display: block;
+}
+
+.information {
+    max-width: 100%;
+    margin-bottom: 40px;
+    height: 244px;
+}
+
+.info-client {
+    display: inline-block;
+}
+
+.testi {
+    float: left;
+}
+
+.tes_title {
+    color: #000000;
+    font-family: "Arial-Bold MT";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 18px;
+    
+}
+
+.icon1 {
+    margin-right: 14px;
+}
+
+.tes_text {
+    width: 425px;
+    height: 133px;
+    color: #363636;
+    font-family: "Arial MT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 17px;
+}
+
+.undertext {
+    font-family: "Arial-Bold MT";
+    font-weight: 700;
+}
+
+.clients {
+    max-width: 50%;
+    float: right;
+    margin-top: 14px;
+}
+
+.cl_title {
+    color: #000000;
+    font-family: "Arial-Bold MT";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.cl_icon {
+    margin-right: 16px;
+}
+
+.cl_icons {
+    font-size: 0;
+    margin-top: 17px;
+}
+
+.cl_link {
+    font-size: 0;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.download {
+    display: inline-block;
+    width: 1003px;
+    height: 143px;
+    border: 1px solid #81e4ed;
+    background-color: #e8fcfe;
+    margin-bottom: 37px;
+}
+
+.load-box{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.download_text {
+    margin-top: 35px;
+    margin-left: 33px;
+    width: 607px;
+    height: 68px;
+    color: #363636;
+    font-family: "Arial MT";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.download_but {
+    vertical-align: middle;
+    margin: 40px;
+    width: 243px;
+    height: 63px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), inset 0 2px 1px rgba(255, 255, 255, 0.1);
+    border: 1px solid #2aacc8;
+    background-color: #2aacc8;
+    background-image: linear-gradient(to top, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
+    color: #0d0707;
+    font-family: "Arial-Bold MT";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.load-text {
+    margin-top: 16px;
+    margin-left: 20px;
+}
+
+.img_down {
+    margin-right: 22px;
+}
+
+.footer {
+    background-color: #e8ebf1;
+}
+
+.top {
+    
+    padding-top: 34px;
+}
+
+.top-inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.top_about {
+    width: 233px;
+    height: 165px;
+    margin-right: 68px;
+}
+
+.ab {
+    margin-bottom: 20px;
+}
+
+.top_title {
+    color: #000000;
+    font-family: "Arial-Bold MT";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.top_text {
+    line-height: 15px;
+    color: #363636;
+    font-family: "Arial MT";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.top_explore {
+    max-width: 71px;
+    margin-right: 78px;
+}
+
+.ex-title {
+    
+    margin-bottom: 16px;
+}
+
+.top_link {
+    text-decoration: none;
+    color: #363636;
+    font-family: "Arial MT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.top_browse {
+    max-width: 104px;
+    margin-right: 60px;
+}
+
+.top_contact {
+    max-width: 193px;
+    margin-right: 46px;
+}
+
+.adr {
+    margin-bottom: 15px;
+}
+
+.bis_inc {
+    font-family: "Arial-Bold MT";
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.top_connect {
+    max-width: 193px;
+}
+
+.title-with-mg {
+    margin-left: 10px;
+}
+
+.connect_icons {
+    margin-top: 11px;
+}
+
+.icon-icon {
+    margin-right: 10px;
+    margin-top: 9px;
+}
+
+.lll {
+    margin-right: 0;
+}
+
+.bottom {
+    display: inline-block;
+}
+
+.bott {
+    padding-top: 20px ;
+    padding-bottom: 55px ;
+}
+
+.bott_text {
+    width: 640px;
+    height: 31px;
+    color: #363636;
+    font-family: "Arial MT";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.bott_bislite {
+    float: right;
+}
